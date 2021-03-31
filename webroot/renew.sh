@@ -14,8 +14,8 @@ docker run -i --rm \
             -v "$SHELL_FOLDER/letsencrypt:/etc/letsencrypt" \
             -v "$SHELL_FOLDER/log:/var/log/letsencrypt" \
 			-v "$webroot:/opt/web" \
-            certbot/dns-cloudflare:latest renew --webroot -w /opt/web --dry-run
-#
+            certbot/dns-cloudflare:latest renew --webroot -w /opt/web 
+#--dry-run
 
 
 # reload nginx
